@@ -21,7 +21,7 @@ function App() {
 
       <div className='list'>
         <h4>{남자[0]} 
-          <span onClick={() => {따봉변경(1)}}>♥️</span>
+          <span onClick={() => {따봉변경(1)}}>👍</span>
           {따봉}
         </h4>
         <p>2월 17일 발행.</p>
