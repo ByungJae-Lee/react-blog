@@ -28,12 +28,15 @@ function App() {
       </div>
 
       <div className='list'>
-        <h4>{남자[1]}</h4>
+        <h4>
+          {남자[1]}
+          <span onClick={() => {따봉변경(1)}}>👍</span></h4>
         <p>2월 17일 발행</p>
       </div>
 
       <div className='list'>
-        <h4>{남자[2]}</h4>
+        <h4>{남자[2]}
+        <span onClick={() => {따봉변경(1)}}>👍</span></h4>
         <p>2월 17일 발행</p>
       </div>
     </div>
