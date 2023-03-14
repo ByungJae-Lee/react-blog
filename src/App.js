@@ -6,12 +6,14 @@ import { useState } from 'react';
 function App() {
 
   let post = '역삼 우동 맛집';
-  let [글제목, 성별변경] = useState(['남자 코트 추천', '강남 우동 맛집', '파이썬독학','여자 코트 추천']);
+  let [글제목, 성별변경] = useState(['남자 코트 추천']);
+  let [강남] = useState(['강남 우동 맛집']);
+  let [파이썬] = useState(['파이썬독학']);
   let [따봉, 따봉변경] = useState(0);
 
   
   // 여자코트추천 만들기
-  // 1. 버튼생성 2. 여자코트 추천으로 변경되게끔 한다 3. 
+  // 1. 3가지 모두 나누기
 
   return (
     <div className="App">
@@ -22,22 +24,22 @@ function App() {
       </div>
 
       <div className='list'>
-        <h4>{글제목[0]} 
+        <h4>{글제목} 
         <span onClick={() => {따봉변경(따봉+1)}}>👍</span>{따봉}
-        <span onClick={() => {성별변경(글제목[3])}}>💁‍♀️</span>
+        <span onClick={() => {성별변경('여자 코트 추천')}}>💁‍♀️</span>
         </h4>
         <p>2월 17일 발행</p>
       </div>
 
       <div className='list'>
         <h4>
-          {글제목[1]}
+          {강남}
           <span onClick={() => {따봉변경(1)}}>👍</span></h4>
         <p>2월 17일 발행</p>
       </div>
 
       <div className='list'>
-        <h4>{글제목[2]}
+        <h4>{파이썬}
         <span onClick={() => {따봉변경(1)}}>👍</span></h4>
         <p>2월 17일 발행</p>
       </div>
