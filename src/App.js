@@ -21,7 +21,7 @@ function App() {
     }}>글수정</button>
 
       <div className='list'>
-        <h4>{글제목[0]} 
+        <h4>{글제목[0]}
         <span onClick={() => {따봉변경(따봉+1)}}>👍</span>{따봉}
         </h4>
         <p>2월 17일 발행</p>
