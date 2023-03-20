@@ -5,17 +5,19 @@ import { useState } from 'react';
 
 function App() {
 
-  
   let [글제목, 글제목변경] = useState(['남자 코트 추천','강남 우동 맛집','파이썬독학']);
   let [따봉, 따봉변경] = useState(0);
   
 
   return (
+  
+  
     <div className="App">
       <div className="black-nav">
-        <h4 style={{ color: "red", fontSize: "10px" }}>ReactBlog</h4>
+        <h4 style={{ color: "green", fontSize: "20px" }}>ReactBlog</h4>
       </div>
 
+      
     <button onClick={() => {
       글제목변경(['여자 코트 추천','강남 우동 맛집','파이썬독학'])
     }}>글수정</button>
