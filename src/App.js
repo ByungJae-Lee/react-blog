@@ -13,7 +13,6 @@ function App() {
 
   return (
   
-  
     <div className="App">
       <div className="black-nav">
         <h4 style={{ color: "green", fontSize: "20px" }}>ReactBlog</h4>
