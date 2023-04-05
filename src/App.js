@@ -23,6 +23,10 @@ function App() {
         <h4>ReactBlog</h4> 
       </div>
 
+    <button onClick={()=> {
+      
+    }}>가나다순 정렬</button>
+
       <button onClick={()=> { 
         let copy = [...글제목];
         copy[0] = '여자 코트 추천'
