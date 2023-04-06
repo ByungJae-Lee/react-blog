@@ -25,7 +25,7 @@ function App() {
 
     <button onClick={()=> {
       
-    }}>가나다순 정렬</button>
+    }}>가나다순정렬</button>
 
       <button onClick={()=> { 
         let copy = [...글제목];
