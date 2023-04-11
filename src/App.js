@@ -26,8 +26,6 @@ function App() {
         <h4>ReactBlog</h4> 
       </div>
 
-
-
    <button onClick={()=> {
     let copy = [...글제목];
     copy.sort();
