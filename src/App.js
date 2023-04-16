@@ -27,7 +27,6 @@ function App() {
       </div>
 
 
-
    <button onClick={()=> {
     let copy = [...글제목];
     copy.sort();
