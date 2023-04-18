@@ -19,7 +19,7 @@ function App() {
 
   return (
     
-    
+
 
     <div className='App'>
 
@@ -55,9 +55,25 @@ function App() {
         <p>2월 17일 발행</p>
       </div>
 
+      <Modal/>
+
     </div>
 
 
   );
+/* 컴포넌트 만들기 
+ 1. function 만들고 -> function app 바깥에다 만들어야함
+ 2. return() 안에 html 담기
+ 3. <함수명><함수명> 쓰기
+*/
+    function Modal() {
+      return(<div className='modal'>
+      <h4>제목</h4>
+      <p>날짜</p>
+      <p>상세내용</p>
+    </div>)
+
+    }
+
 }
 export default App;
