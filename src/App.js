@@ -15,7 +15,7 @@ function App() {
   
   let [글제목, 글제목변경] = useState(['남자 코트 추천','강남 우동 맛집','파이썬 독학'])
   let [따봉, 따봉변경] = useState(0);
-  
+  let [modal, setModal] = useState(true);
 
   return (
     
@@ -51,29 +51,36 @@ function App() {
       </div>
 
       <div className = 'list'>
-        <h4>{글제목[2]}</h4>
+        <h4 onClick={ ()=>{ setModal(!modal) }}>{글제목[2]}</h4>
         <p>2월 17일 발행</p>
       </div>
 
-      <Modal/>
-
+        
+      {
+        modal === true ? <Modal/> : null
+      }
+  {/*
+  if, for 작성불가 3항연산자로 작성해야함
+   */}
+      
     </div>
-
-
   );
 /* 컴포넌트 만들기 
  1. function 만들고 -> function app 바깥에다 만들어야함
  2. return() 안에 html 담기
  3. <함수명><함수명> 쓰기
 */
-    function Modal() {
-      return(<div className='modal'>
-      <h4>제목</h4>
-      <p>날짜</p>
-      <p>상세내용</p>
-    </div>)
+    
 
-    }
 
 }
+
+function Modal() {
+  return(<div className='modal'>
+  <h4>제목</h4>
+  <p>날짜</p>
+  <p>상세내용</p>
+</div>)
+}
+
 export default App;
