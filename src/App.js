@@ -52,7 +52,7 @@ function App() {
         <p>2월 17일 발행</p>
       </div>
 
-        
+    
       {
         modal === true ? <Modal/> : null
       }
